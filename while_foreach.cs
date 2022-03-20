@@ -20,7 +20,7 @@ namespace donguler_while_foreach
             }
             Console.WriteLine(toplam / sayi);
 
-            // a dan z ye kadar tüm harfleri console a yazdır.
+            
             char character = 'a';
             while (character < 'z')
             {
