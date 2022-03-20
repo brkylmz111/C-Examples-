@@ -6,17 +6,17 @@ namespace hata_yonetimi
     {
         static void Main(string[] args)
         {
-            try //Hataya sebebiyet verme ihtimali olan kod 
+            try 
             {
                 Console.WriteLine("Bir sayı giriniz :");
                 int sayi = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Girmiş olduğunuz sayı : " + sayi);
             }
-            catch (Exception ex) //Hata ile karşılaşıldığında ne yapılacağı buraya yazılır 
+            catch (Exception ex) 
             {
                 Console.WriteLine("Hata :" + ex.Message.ToString());
             }
-            finally //Hata olsun olmasın mutlaka yapılmasını istediğimiz işler varsa buraya yazarız
+            finally 
             {
                 Console.Write("İşlem tamamlandı.");
             }
