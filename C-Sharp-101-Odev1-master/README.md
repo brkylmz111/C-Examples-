@@ -1,4 +1,4 @@
-# C# 101 Ödev 
+# C# 101 Homework
 Patika.dev C#101 Ödev 
 
 1. Bir konsol uygulamasında kullanıcıdan pozitif bir sayı girmesini isteyin(n). Sonrasında kullanıcıdan n adet pozitif sayı girmesini isteyin. Kullanıcının girmiş olduğu sayılardan çift olanlar console'a yazdırın.
