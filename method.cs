@@ -6,11 +6,7 @@ namespace metotlar
     {
         static void Main(string[] args)
         {
-            //erişim_belirteci    geri_dönüş_tipi    metot_adı(parametre listesi / argüman)
-            //{
-                //komutlar;
-                //return;
-            //}
+            
 
             int a = 2;
             int b = 3;
