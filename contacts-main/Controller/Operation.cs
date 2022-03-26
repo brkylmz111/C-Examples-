@@ -2,11 +2,10 @@
 
 namespace TelefonRehberi
 {
-    //Operation adlı sınıfımızda 5 Temel işlemimiz olan:
-    //Telefon Numarası Kaydet, Telefon Numarası Sil, Telefon Numarası Güncelle, Rehber Listeleme(A-Z, Z-A seçimli), Rehberde Arama işlemlerini gerçekleştiriyorum.
+  
     public static class Operation
     {
-        //Giriş Karşılamalarını Basan Fonksiyonumuz
+        
         public static void StartPrint()
         {
             Console.WriteLine("Lütfen yapmak istediğiniz işlemi seçiniz:)");
@@ -19,7 +18,7 @@ namespace TelefonRehberi
             Console.WriteLine("*******************************************");
             Console.WriteLine("Çıkmak İçin 1-5 Dışında Her Hangi Bir Şey Girmeniz Yeterlidir.");
         }
-        //Girilen Sayının 1-5 arasında olup olmadığı kontrolu
+        
         public static bool ControlNumber(int number)
         {
             if(number >= 1 && number<= 5)
@@ -33,7 +32,7 @@ namespace TelefonRehberi
             
         }
 
-        //Telefon Rehberini Listeleyen Fonksiyonumuz
+        
         public static void PrintNumberList()
         {
             Console.WriteLine("Telefon Rehberi");
@@ -46,7 +45,7 @@ namespace TelefonRehberi
                 Console.WriteLine("-");
             }
         }
-        //Rehbere Yeni Bir Kullanıcı Kaydeden Fonksiyonumuz
+       
         public static void SaveNumber()
         {
             Console.WriteLine("Lütfen isim giriniz:");
@@ -57,7 +56,7 @@ namespace TelefonRehberi
             string number = Console.ReadLine();
             PhoneListModel.PhoneNumberList.Add(new NumberModel(name, surname, number));
         }
-        //Rehberde Mevcut Olan bir Kullanıcıyı Silen Fonksiyonumuz
+     
         public static void DeleteNumber()
         {
             Console.WriteLine("Lütfen numarasını silmek istediğiniz kişinin adını ya da soyadını giriniz:");
@@ -134,7 +133,7 @@ namespace TelefonRehberi
                 }
             }
         }
-        //Belirtilen Özellikde Rehberde Arama Yapan Fonksiyonumuz
+        
         public static void SearchNumber()
         {
             Console.WriteLine("Arama yapmak istediğiniz tipi seçiniz.");
@@ -181,7 +180,7 @@ namespace TelefonRehberi
             
 
         }
-        //Belirtilen Özellikde Kişi Bulunursa Numarasını Güncelleyen Fonksiyonumuz
+       
         public static void UpdateNumber()
         {
             Console.WriteLine("Lütfen numarasını güncellemek istediğiniz kişinin adını ya da soyadını giriniz:");
